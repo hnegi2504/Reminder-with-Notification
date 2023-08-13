@@ -45,7 +45,7 @@ setInterval(() => {
                                 .create({ 
                                     body: reminder.reminderMsg, 
                                     from: 'whatsapp:+14155238886',       
-                                    to: 'whatsapp:+919599643244' //YOUR PHONE NUMBER INSTEAD OF 8888888888
+                                    to: `whatsapp:${process.env.NUMBER}` //YOUR PHONE NUMBER INSTEAD OF 8888888888
                                 }) 
                                 .then(message => console.log(message.sid)) 
                                 .done()
